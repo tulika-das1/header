@@ -1,0 +1,378 @@
+.header-space{
+    display: none;
+    @media(min-width:1024px){
+       display: block;
+    }
+}
+.mastiwithaarushi-header {
+    background: #FFFFFF;
+    z-index: 9999;
+    margin: 0 auto;
+    border: none;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    animation-duration: .3s;
+    animation-name: sticky-animation;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    @media(min-width:1024px){
+        position: fixed;
+        box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
+    }
+    .header-row{
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        @media(min-width:992px){
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .header-icon{
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            gap: 6px;
+            padding-bottom: 12px;
+                @media(min-width:768px){
+                    justify-content:flex-start;
+                }
+            li{
+                list-style-type: none;
+                a{
+                    height: 30px;
+                    width: 30px;
+                    position: relative;
+                    display: inline-block;
+                    border-radius: 100%;
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                        background-color: #000 !important; 
+                    }
+                    svg{
+                        height: 15px;
+                        width: 15px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                &:first-child{
+                    a{
+                        background-color: #3c5b9b;
+                        fill: #fff;
+                        
+                    }
+                }
+                &:nth-child(2){
+                    a{
+                        background-color: #27a9e1;
+                        fill: #fff;
+                    }
+                }
+                &:nth-child(3){
+                    a{
+                        background-color: #bc2a8d;
+                        fill: #fff;
+                    }
+                }
+                &:last-child{
+                    a{
+                        background-color: #0173b2;
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+        .f-text{
+            text-align: center;
+            font-family:$primary-font;
+            @media (min-width: 992px) {
+                text-align: left;
+            }
+            svg{
+                height: 22px;
+                width: 22px;
+                fill: #2d328f;
+            }
+            font-weight: 400;
+            color: #354f5c;
+            a{
+                color: #2d3193;
+
+                font-weight: 500;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    text-decoration:none;
+                    color: #0094de;
+                }
+            }
+        }
+    }
+    .logo-side {
+        width: 188px;
+        img {
+            display: none;
+            @media (min-width: 1024px) {
+                display: block;
+                width: 100%;
+                margin:0 auto;
+            }
+        }
+    }
+    .mastiwithaarushi-header-bottom {
+        display: none;
+        // width: 100%;
+       > ul {
+            display: flex;
+            justify-content: center;
+            column-gap: 38px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            align-items: center;
+           > li {
+                list-style-type: none;
+                padding: 15px 0;
+                letter-spacing: 2.2px;
+                position: relative;
+               > a {
+                    text-decoration: none;
+                    color: #000000;
+                    font-weight: 400;
+                    transition: color 0.3s ease-in-out;
+                    text-transform: capitalize;
+                    font-family:$primary-font;
+                    &:hover {
+                        color:#cd001a;
+                    }
+                }
+                svg{
+                    height: 15px;
+                    width: 15px;
+                    fill: #354f5c;
+                }
+                ul{
+                    visibility: hidden;
+                    opacity: 0;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #fff;
+                    box-shadow: 0 1px 3px 0 #efefef;
+                    transition: opacity 0.3s ease-in-out,transform 0.3s ease-in-out;
+                    transform: translateY(-10px);
+                    z-index: 10;
+                    > li{
+                        position: relative;
+                        a{
+                            padding: 7px 25px;
+                            text-decoration: none;
+                            color: #354f5c;
+                            display: block;
+                            font-family:$primary-font;
+                            font-weight: 400;
+                            text-transform: capitalize;
+                            // transition: background-color 0.5s ease-in-out;
+                            white-space: nowrap;
+                            outline: none;
+                            &:hover {
+                                color:#cd001a;
+                            }
+                        }
+
+                        > ul{
+                            top:0;
+                            left:100%;
+                        }
+
+                        &:hover{
+                            > ul{
+                                cursor: pointer;
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    > ul {
+                        transform: translateY(0);
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+                .header-btn{
+                    background-color: #266D81;
+                    font-family: $primary-font;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    padding: 10px 20px;
+                    white-space: nowrap;
+                    border-radius: 10em;
+                    transition: all 0.3s ease-in-out;
+                    .request-btn{
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                    &:hover{
+                        opacity: 0.9;
+                    }
+                }
+            }
+        }
+        @media (min-width: 1024px) {
+            display: block;
+        }
+        
+    }
+    .blank-colum{
+        display: none;
+        @media (min-width: 1200px) {
+            display: block;
+        }
+    }
+    .mastiwithaarushi-header-main{
+        display: flex;
+        justify-content: center;
+        max-width: 540px;
+        margin: 0 auto;
+        @media (min-width: 768px)
+        {
+            max-width: 720px;
+        }
+        @media (min-width: 992px)
+        {
+            max-width: 100%;
+            padding: 0 15px;
+            
+        }
+        @media (min-width: 1024px)
+        {
+            justify-content: space-between;
+            
+        }
+        @media (min-width: 1200px)
+        {
+            max-width: 1140px;
+            padding: 0;
+        }
+        @media (min-width: 1400px)
+        {
+            max-width: 1320px;
+        }
+        .action-menu{
+            align-items: center;
+            display: flex;
+            column-gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px 0;
+            @media (min-width: 1024px)
+            {
+                padding:0;
+            }
+            .action-button{
+                color: #000000;
+                text-decoration: none;
+                font-family: $primary-font;
+                font-size: 1em;
+                display: inline-flex;
+                align-items: center;
+                svg{
+                    height: 30px;
+                    width: 30px;
+                    // margin-right: 10px;
+                    fill: #cd001a;
+                    @media (min-width: 1024px)
+                    {
+                        height: 15px;
+                        width: 15px;
+                    }
+                }
+                span{
+                    display: none;
+                    @media (min-width: 1024px)
+                    {
+                        display: block;
+                    }
+                }
+            }
+            // .get-quote-btn{
+            //     background-color: #266D81;
+            //     font-family: $primary-font;
+            //     font-size: 1rem;
+            //     font-weight: 400;
+            //     padding: 10px 20px;
+            //     white-space: nowrap;
+            //     border-radius: 10em;
+            //     transition: all 0.3s ease-in-out;
+            //     display: block;
+            //     .quote-btn{
+            //         text-decoration: none;
+            //         color: #fff;
+            //     }
+            //     @media (min-width: 992px)
+            //     {
+            //         display: none;
+            //     }
+            // }
+        }
+        .logo{
+            width: auto;
+            display: none;
+            align-items: center;
+            @media (min-width:1024px)
+            {
+                display: flex;
+            }
+            .logo-img{
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+        .mastiwithaarushi-menu {
+            display: none;
+           ul {
+                display: flex;
+                justify-content: center;
+                // column-gap: 1.2em;
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                align-items: center;
+                flex-wrap: wrap;
+                li {
+                    list-style-type: none;
+                    padding: 2px 10px;
+                    letter-spacing: 2.2px;
+                    position: relative;
+                    background: #D9D9D9;
+                   a {
+                        text-decoration: none;
+                        color: #354f5c;
+                        font-weight: 400;
+                        transition: color 0.3s ease-in-out;
+                        text-transform: capitalize;
+                        font-family:$primary-font;
+                        &:hover {
+                            color:#266D81;
+                        }
+                    }
+                    
+                }
+            }
+            @media (min-width: 992px) {
+                display: block;
+            }
+        }
+    }
+}
+

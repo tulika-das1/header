@@ -1,0 +1,187 @@
+.quoatation{
+    background-color: #EDEDED;
+    padding-bottom: 50px;
+    .quote-heading{
+        text-align: center;
+        font-family: $primary-font;
+        color: #000;
+        font-size: 1.6em;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 100px;
+        margin-top: 0;
+        padding-top: 10px;
+    }
+    .process-container-main{
+        display: flex;
+        justify-content: space-between;
+        max-width: 540px;
+        margin: 0 auto;
+        @media (min-width: 768px)
+        {
+            max-width: 720px;
+        }
+        @media (min-width: 992px)
+        {
+            max-width: 100%;
+            
+        }
+        @media (min-width: 1200px)
+        {
+            max-width: 1140px;
+            padding: 0;
+        }
+        @media (min-width: 1400px)
+        {
+            max-width: 1320px;
+        }
+        .process-quote{
+            width: 100%;
+            .process-quote-img-container{
+                .process-quote-img{
+                    width: 25%;
+                    display: flex;
+                    margin: 0 auto;
+                }
+            }
+            .process-quote-content{
+                .process-quote-heading{
+                    text-align: center;
+                    font-family: $primary-font;
+                    color: #000;
+                    font-size: 1.4em;
+                    font-weight: 600;
+                }
+                .process-quote-text{
+                    text-align: center;
+                    font-family: $primary-font;
+                    color: #808080;
+                    font-size: 1em;
+                    font-weight: 500;
+                    line-height: 1.44;
+                }
+            }
+        }
+    }
+    
+}
+
+.quartz-granite-part{
+    background-color: #ffffff;
+    margin: auto;
+    max-width: 1320px;
+    padding: 20px 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    box-shadow: 0px 1px 5px 1px #d1cfcfd9;
+    .quartz-heading-main{
+        background-color: #F1F1F1;
+        max-width: 1320px;
+        margin: auto;
+        .quartz-heading{
+            text-align: center;
+            font-family: $primary-font;
+            font-weight: 500;
+            color: #000;
+            font-size: 1.7em;
+            text-transform: uppercase;
+            padding: 5px 0;
+            margin-top: 0;
+        }
+    }
+    .quartz-img-main{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1320px;
+        margin: 0 auto;
+        .quartz-main{
+            .quartz-img-container{
+                margin: 0 10px;
+                .quartz-img{
+                    width: 100%;
+                }
+                .quartz-name{
+                    background-color: #91BFD8;
+                    width: 100%;
+                    margin: 0;
+                    text-align: center;
+                    font-family: $primary-font;
+                    font-weight: 500;
+                    color: #000;
+                    font-size: 1em;
+                    text-transform: capitalize;
+                    margin-top: -10px;
+                    padding-top: 11px;
+                    padding-bottom: 7px;
+                }
+            }
+        }
+    }
+    .granite-heading-main{
+        background-color: #F1F1F1;
+        max-width: 1320px;
+        margin: auto;
+        .granite-heading{
+            text-align: center;
+            font-family: $primary-font;
+            font-weight: 500;
+            color: #000;
+            font-size: 1.7em;
+            text-transform: uppercase;
+            margin-top: 27px;
+            padding: 5px 0;
+        }
+    }
+    
+    .granite-img-main{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1320px;
+        margin: 0 auto;
+        .granite-main{
+            .granite-img-container{
+                margin: 0 10px;
+                .granite-img{
+                    width: 100%;
+                }
+                .granite-name{
+                    background-color: #91BFD8;
+                    width: 100%;
+                    margin: 0;
+                    text-align: center;
+                    font-family: $primary-font;
+                    font-weight: 500;
+                    color: #000;
+                    font-size: 1em;
+                    text-transform: capitalize;
+                    margin-top: -10px;
+                    padding-top: 11px;
+                    padding-bottom: 7px;
+                }
+            }
+        }
+    }
+    .row-flex{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-right: -15px;
+        margin-left: -15px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+}
