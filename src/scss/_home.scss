@@ -177,27 +177,89 @@
             }
         }
     }
-    .row-flex{
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        margin-right: -15px;
-        margin-left: -15px;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 1 auto;
-        -ms-flex: 0 1 auto;
-        flex: 0 1 auto;
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+}
+
+.installation{
+    margin-bottom: 50px;
+    .installation-main{
+        margin: auto;
+        max-width: 1339px;
+        padding: 20px 10px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        .quote-heading{
+            font-family: $primary-font;
+            font-weight: 500;
+            color: #000;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        .installation-form{
+            .tooltip-area{
+                background-color: #ffffff;
+                margin: auto;
+                max-width: 1320px;
+                padding: 20px 20px;
+                box-shadow: 0px 1px 5px 1px #d1cfcfd9;
+                .address-title{
+                    font-family: $primary-font;
+                    font-weight: 400;
+                    color: #000;
+                    font-size: 1.3em;
+                }
+                label{
+                    font-family: $primary-font;
+                    font-weight: 500;
+                    color: #000;
+                    font-size: 1em;
+                    line-height: 3;
+                }
+                .postcode_input{
+                    font-family: $primary-font;
+                    font-weight: 400;
+                    color: #000;
+                    font-size: 1em;
+                    padding: 15px 0 15px 10px;
+                    border:1px solid rgb(131, 131, 131);
+                    border-radius: 4px;
+                    width: 22%;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                .postcode_button{
+                    font-family: $primary-font;
+                    font-weight: 400;
+                    color: #fff;
+                    padding: 15px 30px;
+                    margin-top: 20px;
+                    font-size: 1em;
+                    background-color: #3C7C8E;
+                    border: none;
+                }
+                select{
+                    font-family: $primary-font;
+                    height: 40px;
+                    color: #000;
+                    font-size: 1em;
+                }
+            }
+        }
+        .next-btn-main{
+            display: flex;
+            justify-content: flex-end;
+            .next-btn{
+                font-family: $primary-font;
+                font-weight: 400;
+                color: #fff;
+                padding: 15px 50px;
+                margin-top: 20px;
+                font-size: 1em;
+                background-color: #3C7C8E;
+                border: none;
+                white-space: nowrap;
+            }
+        }
+        
     }
 }
