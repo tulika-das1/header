@@ -237,7 +237,7 @@ body{
     visibility: visible;
 }
 .granite-header .granite-header-bottom > ul > li .header-btn {
-    background-color: #266d81;
+    background-color: #a8d9ea;
     // border-radius: 10em;
     font-family: Roboto, sans-serif;
     font-size: 1rem;
@@ -289,13 +289,13 @@ body{
 }
 @media (min-width: 1200px) {
     .granite-header .granite-header-main {
-        max-width: 1320px;
+        max-width: 1200px;
         padding: 0;
     }
 }
 @media (min-width: 1400px) {
     .granite-header .granite-header-main {
-        max-width: 1570px;
+        max-width: 1385px;
     }
 }
 .granite-header .granite-header-main .action-menu {
@@ -408,7 +408,7 @@ body{
 .granite-header .granite-header-main .granite-menu ul li a {
     color: #000000;
     font-family: Roboto, sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: none;
     text-transform: capitalize;
     transition: color 0.3s ease-in-out;
